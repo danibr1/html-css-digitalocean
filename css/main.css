@@ -6,14 +6,19 @@
     box-sizing: border-box;
 }
 body{
+    font-size:16px;
     color: #5c6a88;
     background-color: #fff;
 }
 
 h2,
-h3,
-h4{
+h3{
     color: #031c4e;
+    font-weight: bold;
+}
+h4{
+    color:  #5c6a88;
+
 }
 
 a{
@@ -30,8 +35,20 @@ ul {
 /* UTILITIES */
 
 /* Color */
-.white-text{
+.bg-white{
+    background-color:#fff;
+}
+.bg-lightgray{
+    background-color:#f2f5f9;
+}
+.txt-white{
     color: #fff;
+}
+.txt-blue{
+    color: #006aff;
+}
+.txt-darkblue{
+    color: #031c4e;
 }
 
 /* ############################################################
@@ -50,10 +67,54 @@ ul {
 .header .my-navbar .nav-right{
     display: none;
 }
-
 /* ############################################################
     MAIN
 ############################################################### */
+/* HERO --------------------------------------------------------*/
+.hero{
+    background-image: url(../img/bg-banner-home.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.hero p{
+    opacity: 0.8;
+}
+.hero .account{
+    border-radius: 10px;
+}
+/* Button create account */
+.hero .account .btn-account{
+    color: #fff;
+    background-color: #006aff;
+    border-color: transparent;
+}
+.hero .account .btn-account:hover{
+    background-color: #0257cf;
+    box-shadow: 2px 4px 9px -2px #D4D0C8;
+}
+/* Button sign up Google */
+.hero .account .btn-google{
+    color: #5c6a88;
+    border-color: transparent;
+    box-shadow: 2px 4px 9px -2px #D4D0C8;
+}
+.hero .account .btn-google .img-google {
+    width: 20px;
+    left: 5px;
+    opacity: .6;
+}
+.hero .account .btn-google:hover .img-google {
+    opacity: 1;
+}
+
+/* CUSTOMERS LOGOS --------------------------------------------------------*/
+.customers .logos li {
+    width: calc((100% / 2) - 5px);
+}
+.customers .logos img {
+    width: 100%;
+}
+
 
 
 
@@ -85,12 +146,15 @@ DESKTOP (@media)    min-width 992px
 
 /* MD TABLET ***************************************************/
 @media screen and (min-width: 768px) and (max-width: 991px){
-
+    .customers .logos li {
+        width: calc((100% / 6) - 5px);
+    }
 }
 
 /* LG TABLET ***************************************************/
 @media screen and (min-width: 992px){
-   
+
+    /* HEADER */
     /* header nav visibility=visible */
     .header .my-navbar .nav-center,
     .header .my-navbar .nav-right{
@@ -112,9 +176,16 @@ DESKTOP (@media)    min-width 992px
     .header .btn-default a {
         color: #006aff;
     }
-
     /* header icon-nav visibility=hidden */
     .header .my-navbar .icon-menu i{
         display:none
+    }
+
+    /* CUSTOMER */
+    .customers .logos li {
+        width: calc((100% / 6) - 5px);
+    }
+    .customers .logos img {
+        width: 100%;
     }
 }
