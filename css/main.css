@@ -1,0 +1,120 @@
+/* *********************************************************** */
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #5c6a88;
+    background-color: #fff;
+}
+
+h2,
+h3,
+h4{
+    color: #031c4e;
+}
+
+a{
+    color: #006aff;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* *********************************************************** */
+/* UTILITIES */
+
+/* Color */
+.white-text{
+    color: #fff;
+}
+
+/* ############################################################
+    HEADER
+############################################################### */
+.header .my-navbar {
+    line-height:65px;
+}
+/* Brand */
+.header .my-navbar img{
+    max-height: 30px;
+    margin-right: 130px;
+}
+/* Nav-center & Nav-right | visible only in desktop mode */
+.header .my-navbar .nav-center,
+.header .my-navbar .nav-right{
+    display: none;
+}
+
+/* ############################################################
+    MAIN
+############################################################### */
+
+
+
+
+
+
+
+
+
+
+/* ############################################################
+    FOOTER
+############################################################### */
+
+
+
+
+
+/* ####################################################################
+MOBILE FIRST        max-width 767px
+TABLET (@media)     min-width 768px
+DESKTOP (@media)    min-width 992px
+######################################################################*/
+
+/*XS MOBILE ****************************************************/
+@media screen and (max-width: 767px){
+
+}
+
+/* MD TABLET ***************************************************/
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+/* LG TABLET ***************************************************/
+@media screen and (min-width: 992px){
+   
+    /* header nav visibility=visible */
+    .header .my-navbar .nav-center,
+    .header .my-navbar .nav-right{
+        display:inline-block    }
+    .header .menu-inline li {
+        display: inline-block;
+        list-style: none;
+        margin-right: 20px;
+    }
+    .header .menu-inline a{
+        color:#031c4e;
+    }
+    .header .menu-inline i{
+        margin-left: 2px;
+    }
+    .header .btn-default {
+        border-color: #006aff;
+    }
+    .header .btn-default a {
+        color: #006aff;
+    }
+
+    /* header icon-nav visibility=hidden */
+    .header .my-navbar .icon-menu i{
+        display:none
+    }
+}
