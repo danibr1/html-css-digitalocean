@@ -34,6 +34,12 @@
     margin: 0 auto; /*centratura*/
 }
 
+/* Columns .PADDING-0 
+NESTING .padding-0 per azzerare il padding interno*/
+[class*="col-"].padding-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
 
 /* ########################################
@@ -58,7 +64,7 @@
     font-weight: bold; /*testo grassetto*/
 }
 p{
-    line-height: 1.3;
+    line-height: 1.4;
 }
 p:first-letter {
     text-transform: uppercase; 
@@ -113,6 +119,18 @@ p:first-letter {
 }
 .fs-30{
     font-size: 30px;
+}
+.fs-31{
+    font-size: 31px;
+}
+.fs-32{
+    font-size: 32px;
+}
+.fs-33{
+    font-size: 33px;
+}
+.fs-34{
+    font-size: 34px;
 }
 .fs-35{
     font-size: 35px;
@@ -346,6 +364,9 @@ p:first-letter {
 .px-10{
     padding:0 10px;
 }
+.px-15{
+    padding:0 15px;
+}
 .px-20{
     padding:0 20px;
 }
@@ -484,6 +505,9 @@ MARGIN | TOP-BOTTOM-LEFT-RIGH
 .mb-20{
     margin-bottom: 20px;
 }
+.mb-25{
+    margin-bottom: 25px;
+}
 .mb-30{
     margin-bottom: 30px;
 }
@@ -507,6 +531,21 @@ MARGIN | TOP-BOTTOM-LEFT-RIGH
 }
 .mb-100{
     margin-bottom: 100px;
+}
+.mb-120{
+    margin-bottom: 120px;
+}
+.mb-130{
+    margin-bottom: 130px;
+}
+.mb-140{
+    margin-bottom: 140px;
+}
+.mb-150{
+    margin-bottom: 150px;
+}
+.mb-160{
+    margin-bottom: 160px;
 }
 /* MARGIN ONLY LEFT 10 > 50px  */
 .ml-5{
