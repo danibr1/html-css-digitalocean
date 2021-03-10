@@ -54,6 +54,43 @@ ul {
     opacity: 0.8;
 }
 
+/* Arrows left/right */
+.slide .carosello::before{
+    position: absolute;
+    content: '\f104';
+    color: #6f7b97;
+    right: 105%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display:none;
+}
+.slide .carosello::after{
+    position: absolute;
+    content: '\f105';
+    color: #031c4e;
+    left: 105%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display:none;
+}
+/* Carosello point */
+.point div{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #006aff;
+    border-radius: 50%;
+}
+.point div:first-child{
+    background-color: #006aff;
+}
+
 /* ############################################################
     HEADER
 ############################################################### */
@@ -122,7 +159,7 @@ ul {
 .configuration aside ul{
     list-style: none;
     padding: 10px 5px;
-    border-left: 1.5px solid #8691a8;    
+    border-left: 1.5px solid #8691a8;
 }
 .configuration aside ul li:not(:last-child) {
     margin-bottom: 20px;
@@ -146,42 +183,7 @@ ul {
 .screenshot .slide .carosello{
     width: 65%;
 }
-/* Arrows left/right */
-.screenshot .slide .carosello::before{
-    position: absolute;
-    content: '\f104';
-    color: #6f7b97;
-    right: 105%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 50px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    display:none;
-}
-.screenshot .slide .carosello::after{
-    position: absolute;
-    content: '\f105';
-    color: #031c4e;
-    left: 105%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 50px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    display:none;
-}
-/* Carosello point */
-.screenshot .point div{
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border: 1px solid #006aff;
-    border-radius: 50%;
-}
-.screenshot .point div:first-child{
-    background-color: #006aff;
-}
+
 
 /* FEATURES ------------------------------------------------------------- */
 .features .plus {
@@ -191,7 +193,7 @@ ul {
 /* SERVICE -------------------------------------------------------------- */
 /* Table */
 .service{
-    background: linear-gradient(0deg, rgba(0,30,154,1) 0%, rgba(0,72,197,1) 59%); 
+    background: linear-gradient(0deg, rgba(0,30,154,1) 0%, rgba(0,72,197,1) 59%);
 }
 .service table a{
     color:#00d7d2;
@@ -207,6 +209,18 @@ ul {
     font-size: 12px;
 }
 
+/* REVIEWS --------------------------------------------------------------- */
+.reviews .carosello{
+    background-color: #fff;
+    height: 380px;
+    max-width: 65%
+}
+.reviews .carosello img{
+    max-width:80%;
+    margin-top:70px;
+    margin-bottom:25px;
+}
+
 
 
 
@@ -216,6 +230,15 @@ DESKTOP (@media)    min-width 992px
 ######################################################################*/
 /* MD TABLET ***************************************************/
 @media screen and (min-width: 768px){
+    /* UTILITY rows carosello */
+    .slide .carosello::before{
+        display:block;
+    }
+    .slide .carosello::after{
+        display:block;
+    }
+
+    /* LOGOS */
     .customers .logos li {
         width: calc((100% / 6) - 5px);
     }
@@ -225,14 +248,6 @@ DESKTOP (@media)    min-width 992px
         margin-bottom:30px;
     }
 
-    /* SCREENSHOT - SLIDE */
-    .screenshot .slide .carosello::before{
-        display:block;
-    }
-    .screenshot .slide .carosello::after{
-        display:block;
-    }
-    
 }
 
 /* LG TABLET ***************************************************/
@@ -248,7 +263,7 @@ DESKTOP (@media)    min-width 992px
         list-style: none;
         margin-right: 20px;
     }
-    
+
     .header .menu-inline a{
         color:#031c4e;
     }
@@ -290,5 +305,5 @@ DESKTOP (@media)    min-width 992px
     .screenshot .point{
         margin-top: 12px;
     }
-  
+
 }
