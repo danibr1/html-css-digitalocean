@@ -489,6 +489,9 @@ MARGIN | TOP-BOTTOM-LEFT-RIGH
 .mt-80{
     margin-top: 80px;
 }
+.mt-85{
+    margin-top: 85px;
+}
 .mt-90{
     margin-top: 90px;
 }
@@ -525,6 +528,9 @@ MARGIN | TOP-BOTTOM-LEFT-RIGH
 }
 .mb-80{
     margin-bottom: 80px;
+}
+.mb-85{
+    margin-bottom: 85px;
 }
 .mb-90{
     margin-bottom: 90px;
