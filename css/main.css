@@ -34,16 +34,20 @@ ul {
 /* ******************************************************************************* */
 /* UTILITIES */
 
-/* Color */
+/* BG Colors */
 .bg-white{
     background-color:#fff;
 }
 .bg-lightgray{
     background-color:#f2f5f9;
 }
+.bg-darkblue{
+    background-color:#031c4e;
+}
 .bg-gradient-blue {
     background: linear-gradient(0deg, rgba(0,30,154,1) 0%, rgba(0,72,197,1) 59%);
 }
+/* TXT colors */
 .txt-white{
     color: #fff;
 }
@@ -53,8 +57,11 @@ ul {
 .txt-darkblue{
     color: #031c4e;
 }
+.txt-lightgrey{
+    color: #8b94a9;
+}
 .opacity{
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 /* Arrows left/right */
@@ -96,9 +103,11 @@ ul {
 }
 .point div:first-child{
     background-color: #006aff;
+    transition: .2s;
 }
 .point div:hover{
     background-color: #0248c5;
+    transition: .2s;
 }
 
 /* #####################################################################
@@ -136,10 +145,12 @@ ul {
     color: #fff;
     background-color: #006aff;
     border-color: transparent;
+    transition: .2s;
 }
 .hero .account .btn-account:hover{
     background-color: #0257cf;
     box-shadow: 2px 4px 9px -2px #D4D0C8;
+    transition: .2s;
 }
 /* Button sign up Google */
 .hero .account .btn-google{
@@ -151,9 +162,11 @@ ul {
     width: 20px;
     left: 5px;
     opacity: .6;
+    transition: .2s;
 }
 .hero .account .btn-google:hover .img-google {
     opacity: 1;
+    transition: .2s;
 }
 
 /* CUSTOMERS LOGOS ------------------------------------------------------*/
@@ -233,14 +246,34 @@ ul {
     margin: 30px auto;
     font-size: 16px;
     box-shadow: 2px 4px 9px -2px #0a1229;
-
+    transition: .2s;
 }
 .started .btn:hover {
     color: #fff;
-    background-color: #0248c5;
+    background-color: #1a5dd1;
+    transition: .2s;
+}
+/* #####################################################################
+    FOOTER
+######################################################################## */
+.footer ul .fab{
+    color: #8b94a9;
+    font-size: 20px;
+}
+.footer h4{
+    color: white;
+    font-weight: bold;
 }
 
-
+.footer .footer-menu a{
+    color: #8b94a9;
+}
+.footer .footer-menu a:hover{
+    color: #b4bac7;
+}
+.footer .footer-menu li {
+    padding: 3px 0px;
+}
 
 /* ########################################################################
 TABLET (@media)     min-width 768px
