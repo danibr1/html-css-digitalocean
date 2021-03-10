@@ -69,6 +69,7 @@ ul {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     display:none;
+    cursor: pointer;
 }
 .slide .carosello::after{
     position: absolute;
@@ -81,7 +82,9 @@ ul {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     display:none;
+    cursor: pointer;
 }
+
 /* Carosello point */
 .point div{
     display: inline-block;
@@ -89,9 +92,13 @@ ul {
     width: 10px;
     border: 1px solid #006aff;
     border-radius: 50%;
+    cursor:pointer;
 }
 .point div:first-child{
     background-color: #006aff;
+}
+.point div:hover{
+    background-color: #0248c5;
 }
 
 /* #####################################################################
